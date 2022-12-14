@@ -1,7 +1,7 @@
 {
   "name": "tiny-binary-heap",
   "version": "0.0.0",
-  "description": "Simple binary heap with no dependencies",
+  "description": "Tiny binary heap with no dependencies",
   "main": "index.js",
   "devDependencies": {
     "brittle": "^3.1.1",

@@ -1,6 +1,6 @@
 # tiny-binary-heap
 
-Simple binary heap with no dependencies
+Tiny binary heap with no dependencies
 
 ```
 npm install tiny-binary-heap
