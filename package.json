@@ -1,6 +1,6 @@
 {
   "name": "tiny-binary-heap",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tiny binary heap with no dependencies",
   "main": "index.js",
   "devDependencies": {
