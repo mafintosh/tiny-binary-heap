@@ -31,6 +31,27 @@ module.exports = class TinyBinaryHeap {
     return min
   }
 
+  update () {
+    this._down(1)
+  }
+
+  filter (fn) { // TODO: can prob be done smarter, research
+    const all = []
+
+    for (let pos = 0; pos < this.heap.length; pos++) {
+      const val = this.heap[pos]
+      if (val === undefined) continue
+      if (fn(val)) all.push(val)
+      this.heap[pos] = undefined
+    }
+
+    this.length = 0
+
+    for (let i = 0; i < all.length; i++) {
+      this.push(all[i])
+    }
+  }
+
   _down (pos) {
     const val = this.heap[pos]
     let cPos = 0
